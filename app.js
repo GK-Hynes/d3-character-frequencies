@@ -52,8 +52,8 @@ d3.select("form")
         
         letterEnter.merge(letters)
             .select("rect")
-              .style("width", barWidth)
-              .style("height", function(d) {
+              .attr("width", barWidth)
+              .attr("height", function(d) {
                     return d.count * 20;
                 })
                 .attr("x", function(d, i) {
